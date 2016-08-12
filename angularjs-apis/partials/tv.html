@@ -1,0 +1,6 @@
+<div>
+    <h2>{{ tv.name}}</h2>
+    <h4>{{ tv.overview }}</h4>
+    <p>First Air Date: {{tv.first_air_date | TMDbDate:"d MMM yyyy"}}</p>
+    <img ng-src="http://image.tmdb.org/t/p/w500{{ tv.backdrop_path }}">
+</div>

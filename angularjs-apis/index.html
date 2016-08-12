@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="TMDb">
 <head>
     <meta charset="utf-8">
     <title>AngularJS API's Workshop</title>
@@ -10,21 +10,28 @@
     <div class="container">
         <div class="navbar">
             <div class="navbar-inner">
-                <a class="brand" href="#">Dabble</a>
+                <a class="brand" href="#">TMDb</a>
                 <ul class="nav">
+                    <li>
+                        <a href="#/movie">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#/tv">TV Series</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <h1>Hello {{ name }}</h1>
-        <input type="text" ng-model="name">
+        <div ng-view></div>
     </div>
-    <script src="js/bundle.js"></script>
+    <script src="browserify/bundle.js"></script>
 <!--
+    <script src="lib/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
 -->
+
 </body>
 </html>

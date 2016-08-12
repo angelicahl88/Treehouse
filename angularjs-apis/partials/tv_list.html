@@ -1,0 +1,15 @@
+<div>
+    <ul class="thumbnails">
+        <li class="thumbnail" ng-repeat="result in list.results">
+            <h2>{{ result.original_name }}</h2>
+            <p>{{ result.overview }}</p>
+            <p>Release date: {{ result.release_date }}</p>
+            <a href="#/tv/{{ result.id }}">
+                <img ng-src="http://image.tmdb.org/t/p/w500{{ result.poster_path }}">
+            </a>
+        </li>
+    </ul>
+    <button class="btn btn-primary" ng-click="loadNextPage()">
+        Load More
+    </button>
+</div>
