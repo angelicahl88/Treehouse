@@ -25,28 +25,26 @@
 
   <script type="text/javascript">
     'use strict';
-    // Test for local storage
     function supportsLocalStorage() {
-      try {
+      try{
         return 'localStorage' in window && window['localStorage'] !== null;
-      } catch(e){
+      } catch(e) {
         return false;
       }
     }
 
-    // Retrieve searches from Local Storage, return an array
     function getRecentSearches() {
       var searches = localStorage.getItem('recentSearches');
-      if (searches) {
+      if(searches) {
         return JSON.parse(searches);
+      } else {
+        return [];
       }
-      return [];
     }
 
-    // Validate and save strings to store of past searches
     function saveSearchString(str) {
       var searches = getRecentSearches();
-      if (searches.indexOf(str) > -1 || !str) {
+      if(!str || searches.indexOf(str) > -1) {
         return false;
       }
       searches.push(str);
@@ -54,7 +52,6 @@
       return true;
     }
 
-    // Clear out searches
     function removeSearches() {
       localStorage.removeItem('recentSearches');
     }
@@ -72,9 +69,7 @@
     }
 
     window.onload = function() {
-      // Make sure Local Storage exists before trying to use it
-      if (supportsLocalStorage) {
-        // Get references to DOM elements
+      if(supportsLocalStorage()) {
         var searchForm = document.getElementById('searchForm');
         var searchBar = document.getElementById('searchBar');
         var recentSearchList = document.getElementById('recentSearchList');
