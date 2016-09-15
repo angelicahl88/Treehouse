@@ -1,3 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+//css
+import './css/app.css';
+
 var PLAYERS = [
   {
     name: 'Angelica Hart Lindh',

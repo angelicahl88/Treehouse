@@ -1,0 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #4a7b6f;
+  font-size: 16px;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+
+#container {
+  width: 95%;
+  margin: 10% auto;
+  text-align: center;
+  height: 100%;
+  background-color: #242e35;
+  border-radius: 8px;
+  position: relative; }
+  @media screen and (min-width: 800px) {
+    #container {
+      width: 70%; } }
+  #container form {
+    padding: 16px 0;
+    background-color: #ccdddd;
+    border-radius: 8px 8px 0 0; }
+    #container form input, #container form p {
+      display: inline-block; }
+    #container form input.search {
+      margin: 0 32px 0 16px;
+      width: 200px;
+      height: 25px;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #242e35; }
+    #container form p {
+      font-size: 12.8px;
+      text-transform: uppercase;
+      padding-top: 16px; }
+      @media sreen and (min-width: 530px) {
+        #container form p {
+          padding-top: 0; } }
+  #container table {
+    display: table;
+    width: 100%;
+    margin-bottom: 32px; }
+    #container table > thead th {
+      padding: 16px;
+      background-color: #2e3b44;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #eeeee7; }
+    #container table > tbody th {
+      padding: 8px;
+      color: #9eaeb3;
+      text-transform: uppercase; }
+    #container table > tbody td {
+      padding: 8px;
+      color: #eeeee7; }
+      #container table > tbody td span.noStock {
+        color: #ab2d2d;
+        text-decoration: line-through; }
+
+/*# sourceMappingURL=app.css.map */

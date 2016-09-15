@@ -1,0 +1,72 @@
+body {
+  background: $dGreen;
+  font-size: $baseSize;
+  font-family: $reg;
+}
+
+#container {
+  width: 95%;
+  margin: 10% auto;
+  text-align: center;
+  height: 100%;
+  background-color: $dBlue;
+  border-radius: 8px;
+  position: relative;
+  @media screen and (min-width: 800px) {
+    width: 70%;
+  }
+  & form {
+    padding: 16px 0;
+    background-color: $lBlue;
+    border-radius: 8px 8px 0 0;
+    & input, & p {
+      display: inline-block;
+    }
+    & input.search {
+      margin: 0 32px 0 16px;
+      width: 200px;
+      height: 25px;
+      border-radius: 4px;
+      font-size: $baseSize;
+      color: $dBlue;
+    }
+    & input.checkbox {
+
+    }
+    & p {
+      font-size: $baseSize * 0.8;
+      text-transform: uppercase;
+      padding-top: 16px;
+      @media sreen and (min-width: 530px) {
+        padding-top: 0;
+      }
+    }
+  }
+  & table {
+    display: table;
+    width: 100%;
+    margin-bottom: 32px;
+    & > thead th {
+      padding: 16px;
+      background-color: lighten($dBlue, 5%);
+      text-transform: uppercase;
+      font-size: $baseSize;
+      color: $white;
+    }
+    & > tbody {
+      & th {
+        padding: 8px;
+        color: $steelBlue;
+        text-transform: uppercase;
+      }
+      & td {
+        padding: 8px;
+        color: $white;
+        & span.noStock {
+          color: $red;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
