@@ -16,7 +16,6 @@ print(avg)
 
 
 # exceptions
-
 try:
     count = int(input('give me a number '))
 except ValueError:
