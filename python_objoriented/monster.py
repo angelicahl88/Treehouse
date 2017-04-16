@@ -51,8 +51,8 @@ class Monster(Combat):
 
 # subclass
 class Goblin(Monster):
-    max_hp = 3
-    max_xp = 50
+    max_hp = 1
+    max_xp = 5
     sound = 'speak'
 
 # create an instance of a subclass
@@ -60,13 +60,13 @@ class Goblin(Monster):
 
 
 class Troll(Monster):
-    min_hp = 10
-    max_hp = 80
+    min_hp = 3
+    max_hp = 8
     min_xp = 0
     sound = 'growl'
 
 
 class Dragon(Monster):
-    min_hp = 100
-    max_hp = 200
+    min_hp = 5
+    max_hp = 10
     weapon = 'firebreath'
